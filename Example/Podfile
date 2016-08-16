@@ -1,6 +1,11 @@
 use_frameworks!
-target 'Toast_Tests' do
+
+target 'Toast_Example' do
   pod 'Toast', :path => '../'
-  
-  
+
+  target 'Toast_Tests' do
+    inherit! :search_paths
+
+    
+  end
 end

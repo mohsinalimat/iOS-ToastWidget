@@ -1,6 +1,3 @@
-<<<<<<< 48c119a2cbcd9f2e2229f1c0baf4bd7b633cf569
-# iOS-ToastWidget
-=======
 # Toast
 
 [![CI Status](http://img.shields.io/travis/zy.zhao/Toast.svg?style=flat)](https://travis-ci.org/zy.zhao/Toast)
@@ -30,4 +27,3 @@ zy.zhao, zy.zhao@alibaba-inc.com
 ## License
 
 Toast is available under the MIT license. See the LICENSE file for more info.
->>>>>>> Initial commit

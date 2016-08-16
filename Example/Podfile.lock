@@ -1,0 +1,16 @@
+PODS:
+  - Toast (0.1.0)
+
+DEPENDENCIES:
+  - Toast (from `../`)
+
+EXTERNAL SOURCES:
+  Toast:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Toast: ee3bb840c5064711aeb98a180cba64d90e08eedc
+
+PODFILE CHECKSUM: 20009ad5c82259e6a20f3fd1790562f8fe52b809
+
+COCOAPODS: 1.0.1

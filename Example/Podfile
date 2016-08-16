@@ -1,0 +1,6 @@
+use_frameworks!
+target 'Toast_Tests' do
+  pod 'Toast', :path => '../'
+  
+  
+end

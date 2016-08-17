@@ -8,13 +8,18 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, GZToastViewLocation) {
+    GZ_Toast_Bottom,
+    GZ_Toast_In_Middle,
+};
+
 /**
  *  Highly customizable toast view for iOS
  *  1) Support 3 different ways of default layout: pure toast; toast + image; toast + toast title + image
  *  2) Provide isolated toast container, user can put any sort of subview in toast.
  *  3) Screen rotation supported.
  */
-@interface GZToastView : NSObject
+@interface GZToastView : UIView
 
 #pragma mark - Initializer
 
@@ -32,12 +37,23 @@
 #pragma mark - Control
 
 - (void)showForDuration:(float)seconds
- withCompletionCallback:(void(^)())completionCallback;
+           onCompletion:(void(^)())completionCallback;
 
 - (void)dismiss;
 
 #pragma mark - Customizable Property
 
-@property (strong) UIView* backgroudView;
+/**
+ *  Whether the toast should blocking user interaction
+ */
+@property (assign) BOOL blockingUI;
+
+/**
+ *  Mask color. Override to customize
+ */
+@property (strong) UIColor* maskColor;
+
+
+
 
 @end

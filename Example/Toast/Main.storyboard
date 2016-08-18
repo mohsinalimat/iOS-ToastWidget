@@ -16,7 +16,110 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4oL-h8-T4P">
+                                <rect key="frame" x="211" y="265" width="180" height="30"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.40392156862745099" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MdI-7z-uUa"/>
+                                    <constraint firstAttribute="width" constant="180" id="p1D-Qe-93b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="toast style 1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKT-d6-g9E">
+                                <rect key="frame" x="211" y="317" width="180" height="30"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.4039215686" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="3PE-U7-mfn"/>
+                                    <constraint firstAttribute="height" constant="30" id="R10-tf-3xT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="toast style 2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAP-bm-UgU">
+                                <rect key="frame" x="211" y="369" width="180" height="30"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.4039215686" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="81V-1e-a86"/>
+                                    <constraint firstAttribute="height" constant="30" id="qxA-mH-RvQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="toast style 3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0HN-oE-P2B">
+                                <rect key="frame" x="211" y="421" width="180" height="30"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.4039215686" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1xW-hX-aM0"/>
+                                    <constraint firstAttribute="width" constant="180" id="oj0-ks-lD0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="customized toast">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toast Widget Demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5y-ZS-Im2">
+                                <rect key="frame" x="211" y="86" width="180" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="mPC-Iq-yD7"/>
+                                    <constraint firstAttribute="width" constant="180" id="uNi-rG-Nsk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.4039215686" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Buf-vt-ddb">
+                                <rect key="frame" x="268" y="133" width="66" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="JPa-eS-A7N"/>
+                                    <constraint firstAttribute="height" constant="66" id="tyC-Xp-Ysl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@Author: Zhao Yue, All Rights Reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQr-KD-PcO">
+                                <rect key="frame" x="212" y="517" width="178.5" height="12"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                <color key="textColor" red="0.031200576573610306" green="0.0666646808385849" blue="0.05881199985742569" alpha="0.54000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.08235294118" green="0.67450980390000004" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="LQr-KD-PcO" secondAttribute="bottom" constant="88" id="3sK-m8-XgD"/>
+                            <constraint firstItem="iKT-d6-g9E" firstAttribute="width" secondItem="4oL-h8-T4P" secondAttribute="width" id="4Rr-RN-IP9"/>
+                            <constraint firstItem="4oL-h8-T4P" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" constant="1" id="ELA-0h-Gn1"/>
+                            <constraint firstItem="0HN-oE-P2B" firstAttribute="top" secondItem="eAP-bm-UgU" secondAttribute="bottom" constant="22" id="GRW-81-8pq"/>
+                            <constraint firstItem="eAP-bm-UgU" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" constant="1" id="Gb0-V6-rdB"/>
+                            <constraint firstItem="d5y-ZS-Im2" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" constant="1" id="Jed-3b-JjB"/>
+                            <constraint firstItem="Buf-vt-ddb" firstAttribute="top" secondItem="d5y-ZS-Im2" secondAttribute="bottom" constant="22" id="Jgh-Ew-nXu"/>
+                            <constraint firstItem="0HN-oE-P2B" firstAttribute="width" secondItem="eAP-bm-UgU" secondAttribute="width" id="JpT-vS-m2Z"/>
+                            <constraint firstItem="LQr-KD-PcO" firstAttribute="centerX" secondItem="0HN-oE-P2B" secondAttribute="centerX" id="LXA-eM-sur"/>
+                            <constraint firstItem="Buf-vt-ddb" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" constant="1" id="Suy-wT-zLU"/>
+                            <constraint firstItem="eAP-bm-UgU" firstAttribute="top" secondItem="iKT-d6-g9E" secondAttribute="bottom" constant="22" id="XJH-kY-R7v"/>
+                            <constraint firstItem="eAP-bm-UgU" firstAttribute="width" secondItem="iKT-d6-g9E" secondAttribute="width" id="ZCO-SL-Zho"/>
+                            <constraint firstItem="0HN-oE-P2B" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" constant="1" id="Zl1-a2-BbA"/>
+                            <constraint firstItem="LQr-KD-PcO" firstAttribute="top" secondItem="0HN-oE-P2B" secondAttribute="bottom" constant="66" id="chw-b8-uUx"/>
+                            <constraint firstItem="iKT-d6-g9E" firstAttribute="top" secondItem="4oL-h8-T4P" secondAttribute="bottom" constant="22" id="ksT-ZZ-W9A"/>
+                            <constraint firstItem="iKT-d6-g9E" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" constant="1" id="mdJ-dT-WT9"/>
+                            <constraint firstItem="4oL-h8-T4P" firstAttribute="top" secondItem="Buf-vt-ddb" secondAttribute="bottom" constant="66" id="nfY-Na-snj"/>
+                            <constraint firstItem="d5y-ZS-Im2" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="66" id="sJM-Kt-aBH"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3sK-m8-XgD"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +127,7 @@
             <point key="canvasLocation" x="305" y="433"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Icon.png" width="180" height="180"/>
+    </resources>
 </document>

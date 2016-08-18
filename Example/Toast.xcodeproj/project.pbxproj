@@ -21,6 +21,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6CB778791DA0C0027B6F4F47 /* Pods_Toast_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7825AF427881B0DD54809575 /* Pods_Toast_Tests.framework */; };
+		7F0CA18D1D64A0810032856B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F0CA18C1D64A0810032856B /* Icon.png */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		C3AB650ED2217762378D5F26 /* Pods_Toast_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF1D4C32141188AE0FBC4E9 /* Pods_Toast_Example.framework */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,7 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		775A9D2CB33EFB4C2A909A57 /* Toast.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Toast.podspec; path = ../Toast.podspec; sourceTree = "<group>"; };
 		7825AF427881B0DD54809575 /* Pods_Toast_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Toast_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F0CA18C1D64A0810032856B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Images.xcassets/Icon.png; sourceTree = "<group>"; };
 		861E004D3F9E767318A7FBD3 /* Pods-Toast_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toast_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Toast_Example/Pods-Toast_Example.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C7698598E3EC4DBC6B25C467 /* Pods-Toast_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toast_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Toast_Example/Pods-Toast_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7F0CA18C1D64A0810032856B /* Icon.png */,
 				6003F595195388D20070C39A /* Toast-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
@@ -276,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F0CA18D1D64A0810032856B /* Icon.png in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,

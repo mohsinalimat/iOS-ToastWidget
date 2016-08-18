@@ -1,5 +1,5 @@
 PODS:
-  - Toast (0.1.0)
+  - Toast (0.0.1)
 
 DEPENDENCIES:
   - Toast (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Toast: ee3bb840c5064711aeb98a180cba64d90e08eedc
+  Toast: 231597703bf1eabfe53477e4dabdb09c5ccc6b05
 
 PODFILE CHECKSUM: 1e07bc470208088da79d5034754a1bbcefc739d7
 

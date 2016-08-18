@@ -7,6 +7,7 @@
 //
 
 #import "GZViewController.h"
+#import <Toast/Toast-umbrella.h>
 
 @interface GZViewController ()
 
@@ -19,6 +20,23 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
+- (IBAction)toastStyle1:(id)sender {
+    NSLog(@"Displaying toastStyle1");
+}
+
+- (IBAction)toastStyle2:(id)sender {
+    NSLog(@"Displaying toastStyle2");
+}
+
+- (IBAction)toastStyle3:(id)sender {
+    NSLog(@"Displaying toastStyle3");
+}
+
+- (IBAction)customitzedToast:(id)sender {
+    NSLog(@"Displaying customizedToast");
+}
+
 
 - (void)didReceiveMemoryWarning
 {

@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		35BBC110BE213C46B147CD39F27147F7 /* Pods-Toast_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1ACF920FBA8A33A6F00D41F8EAFAD6E /* Pods-Toast_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4664D062A249D9725C29C4F969BD46AB /* GZToastUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4451DFE05E262AFB845BF4251AB8F6 /* GZToastUtils.m */; };
 		6F79395E38A858996EE8254E962A61ED /* Pods-Toast_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E69065B9DE67FF5D75EA693F7D700B6A /* Pods-Toast_Example-dummy.m */; };
-		793E7F5A3A8C67C916FF7F69203ED396 /* Toast-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 435A0761E187C9AC987F1AE43F65AE99 /* Toast-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F0CA18A1D63589D0032856B /* GZToastUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F0CA1881D63589D0032856B /* GZToastUtils.h */; };
-		7F0CA18B1D63589D0032856B /* GZToastUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0CA1891D63589D0032856B /* GZToastUtils.m */; };
-		7FE114FE1D6330B600A36543 /* GZToastView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FE114FC1D6330B600A36543 /* GZToastView.h */; };
-		7FE114FF1D6330B600A36543 /* GZToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE114FD1D6330B600A36543 /* GZToastView.m */; };
 		91BEDA10DFF7D365B3145F99E4D22114 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		97F2625608EF15AA46015B4F60FFBEE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		A79CF341E573EF245833896B69761B72 /* Toast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E928C9BF0E363621719B2129DDEDD4 /* Toast-dummy.m */; };
 		A806EE023156C5E5082A82A60218B2BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		D08C000E199261302066259F7195ED7C /* GZToastView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8902AE6689D0FE474B04B20050AB7B12 /* GZToastView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5629D6D980B3A8F3CFC11AC52BB50CF /* GZToastUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = FAA9B238A2B7D13C7F0E651F59F8AB9A /* GZToastUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDF422C34EDCBF904EE94CBF80AE6D97 /* GZToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4902103BBF1FEC232CB112E18FEEC283 /* GZToastView.m */; };
 		F3EB746429FD12FC4022ED76CC70FEC3 /* Pods-Toast_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFDAA569DB46E736A81A7B5852CDCA0 /* Pods-Toast_Tests-dummy.m */; };
 		F64D455EB7B10BB0EC4A709F948C36BE /* Pods-Toast_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 988BDC9C2558F7422345BF825B74F2B5 /* Pods-Toast_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F92C65B43F43F7ECFAFC6584E7676AC3 /* Toast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E928C9BF0E363621719B2129DDEDD4 /* Toast-dummy.m */; };
+		FF9FE1B39548FB6FC78C2938E512B1D4 /* Toast-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 435A0761E187C9AC987F1AE43F65AE99 /* Toast-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,18 +41,17 @@
 		35E928C9BF0E363621719B2129DDEDD4 /* Toast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-dummy.m"; sourceTree = "<group>"; };
 		3D9B289741E6FA45448F32C0CED3CB46 /* Pods-Toast_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Toast_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		435A0761E187C9AC987F1AE43F65AE99 /* Toast-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-umbrella.h"; sourceTree = "<group>"; };
+		4902103BBF1FEC232CB112E18FEEC283 /* GZToastView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GZToastView.m; sourceTree = "<group>"; };
 		79CC3234A4062F86E24BDE49FC19071D /* Pods-Toast_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Toast_Example.modulemap"; sourceTree = "<group>"; };
-		7F0CA1881D63589D0032856B /* GZToastUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZToastUtils.h; sourceTree = "<group>"; };
-		7F0CA1891D63589D0032856B /* GZToastUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZToastUtils.m; sourceTree = "<group>"; };
-		7FE114FC1D6330B600A36543 /* GZToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZToastView.h; sourceTree = "<group>"; };
-		7FE114FD1D6330B600A36543 /* GZToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZToastView.m; sourceTree = "<group>"; };
 		854D5B311051CAB0BB476215DF8C8D49 /* Pods-Toast_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Toast_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		87F94B9D4DE86D2AAEF0CB17BD3B7821 /* Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8902AE6689D0FE474B04B20050AB7B12 /* GZToastView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GZToastView.h; sourceTree = "<group>"; };
 		8AFDAA569DB46E736A81A7B5852CDCA0 /* Pods-Toast_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Toast_Tests-dummy.m"; sourceTree = "<group>"; };
 		8BD46F7C94B0185A76D4D4EC23616506 /* Pods-Toast_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Toast_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		988BDC9C2558F7422345BF825B74F2B5 /* Pods-Toast_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Toast_Example-umbrella.h"; sourceTree = "<group>"; };
 		9C151CDAC44EA12FE7917D0F42644C04 /* Pods-Toast_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Toast_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9D4451DFE05E262AFB845BF4251AB8F6 /* GZToastUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GZToastUtils.m; sourceTree = "<group>"; };
 		9F0C3101BD71F6D3F5601CC72447F95F /* Pods-Toast_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Toast_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A203CB9FFCEB5F9F05A1FD112579ED80 /* Pods-Toast_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Toast_Example-frameworks.sh"; sourceTree = "<group>"; };
 		AC737B8BF24C37B6D78A2E63C13344C6 /* Pods-Toast_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Toast_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +67,7 @@
 		E69065B9DE67FF5D75EA693F7D700B6A /* Pods-Toast_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Toast_Example-dummy.m"; sourceTree = "<group>"; };
 		E91B87EA593A6F3933EA49AAC5D8CDB4 /* Toast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Toast.modulemap; sourceTree = "<group>"; };
 		F1ACF920FBA8A33A6F00D41F8EAFAD6E /* Pods-Toast_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Toast_Tests-umbrella.h"; sourceTree = "<group>"; };
+		FAA9B238A2B7D13C7F0E651F59F8AB9A /* GZToastUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GZToastUtils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,29 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				D1ADE613A599537B2C30F5B2D4702FCA /* Support Files */,
-				27A4C07E2BAAA031E79555E9041A44CF /* Toast */,
+				D790E6C3FCD00AFDB7C986C572134E45 /* Toast */,
 			);
 			name = Toast;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		06DC75E8FAAA59D4E699F84AE2BB51D8 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				7FE114FC1D6330B600A36543 /* GZToastView.h */,
-				7FE114FD1D6330B600A36543 /* GZToastView.m */,
-				7F0CA1881D63589D0032856B /* GZToastUtils.h */,
-				7F0CA1891D63589D0032856B /* GZToastUtils.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		27A4C07E2BAAA031E79555E9041A44CF /* Toast */ = {
-			isa = PBXGroup;
-			children = (
-				06DC75E8FAAA59D4E699F84AE2BB51D8 /* Classes */,
-			);
-			path = Toast;
 			sourceTree = "<group>";
 		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
@@ -203,6 +184,14 @@
 			path = "Example/Pods/Target Support Files/Toast";
 			sourceTree = "<group>";
 		};
+		D790E6C3FCD00AFDB7C986C572134E45 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				FD85CE4672840C3992C6298B3880967E /* Classes */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
 		FA760301CB0BF6E659552584E27F126B /* Pods-Toast_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +220,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		FD85CE4672840C3992C6298B3880967E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9B238A2B7D13C7F0E651F59F8AB9A /* GZToastUtils.h */,
+				9D4451DFE05E262AFB845BF4251AB8F6 /* GZToastUtils.m */,
+				8902AE6689D0FE474B04B20050AB7B12 /* GZToastView.h */,
+				4902103BBF1FEC232CB112E18FEEC283 /* GZToastView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -238,17 +238,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F0CA18A1D63589D0032856B /* GZToastUtils.h in Headers */,
-				7FE114FE1D6330B600A36543 /* GZToastView.h in Headers */,
 				F64D455EB7B10BB0EC4A709F948C36BE /* Pods-Toast_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C06141FA16185AC0635592E77B72B3B2 /* Headers */ = {
+		720810A84685D3867DBBE95274E53F6B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				793E7F5A3A8C67C916FF7F69203ED396 /* Toast-umbrella.h in Headers */,
+				D5629D6D980B3A8F3CFC11AC52BB50CF /* GZToastUtils.h in Headers */,
+				D08C000E199261302066259F7195ED7C /* GZToastView.h in Headers */,
+				FF9FE1B39548FB6FC78C2938E512B1D4 /* Toast-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,9 +302,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A700F9AE71BF0329F4AA3E221E76875A /* Build configuration list for PBXNativeTarget "Toast" */;
 			buildPhases = (
-				7F2FB0E3A37833DAE23005B3275FE475 /* Sources */,
+				09F084C4F7284414567A6C0AF7439AD3 /* Sources */,
 				8A43F3B6A445AFBB3047953B2E5D68AC /* Frameworks */,
-				C06141FA16185AC0635592E77B72B3B2 /* Headers */,
+				720810A84685D3867DBBE95274E53F6B /* Headers */,
 			);
 			buildRules = (
 			);
@@ -344,6 +344,16 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		09F084C4F7284414567A6C0AF7439AD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4664D062A249D9725C29C4F969BD46AB /* GZToastUtils.m in Sources */,
+				EDF422C34EDCBF904EE94CBF80AE6D97 /* GZToastView.m in Sources */,
+				A79CF341E573EF245833896B69761B72 /* Toast-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		21C5F2F99677267074606785D0B3C881 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -352,21 +362,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7F2FB0E3A37833DAE23005B3275FE475 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F92C65B43F43F7ECFAFC6584E7676AC3 /* Toast-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8E94A391EF159B134CC714F92C24C383 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6F79395E38A858996EE8254E962A61ED /* Pods-Toast_Example-dummy.m in Sources */,
-				7F0CA18B1D63589D0032856B /* GZToastUtils.m in Sources */,
-				7FE114FF1D6330B600A36543 /* GZToastView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

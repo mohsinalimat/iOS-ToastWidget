@@ -1,22 +1,23 @@
 {
   "name": "Toast",
-  "version": "0.1.0",
-  "summary": "A short description of Toast.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/Toast",
+  "version": "0.0.1",
+  "summary": "Toast widget on iOS platform",
+  "description": "1. iOS version of android related toast view. Which supports icon, text, loading view display.\n2. Current widget supports screen rotation\n3. Auto adjust display height when keyboard pops\n4. Highly customizable via view properties",
+  "homepage": "https://github.com/SamuelZhaoY/",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "zy.zhao": "zy.zhao@alibaba-inc.com"
+    "zy.zhao": "zhaoy.samuel@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/Toast.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/SamuelZhaoY/iOS-ToastWidget.git",
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "Toast/Classes/**/*"
+  "source_files": "Toast/Classes/*",
+  "public_header_files": "Toast/Classes/*.h"
 }

@@ -24,12 +24,12 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'Toast/Classes/**/*'
+  s.source_files = 'Toast/Classes/*'
   
   # s.resource_bundles = {
   #   'Toast' => ['Toast/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Toast/Classes/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
 end

@@ -290,24 +290,16 @@
 #pragma mark - Orientation Change
 - (void)orientationChanged:(NSNotification *)notification{
     
-    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
-    switch (orientation)
-    {
-        case UIInterfaceOrientationPortrait:
-        case UIInterfaceOrientationPortraitUpsideDown:
-        {
-            //load the portrait view
-        }
-            
-            break;
-        case UIInterfaceOrientationLandscapeLeft:
-        case UIInterfaceOrientationLandscapeRight:
-        {
-            //load the landscape view
-        }
-            break;
-        case UIInterfaceOrientationUnknown:break;
-    }
+    UIWindow* window = self.window;
+    float windowWidth = window.bounds.size.width;
+    float windowHeight= window.bounds.size.height;
+    float toastOriginX = (windowWidth - self.frame.size.width) / 2;
+    float toastOriginY = (windowHeight - self.frame.size.height) / 2;
+    
+    self.frame = CGRectMake(toastOriginX,
+                            toastOriginY,
+                            self.frame.size.width,
+                            self.frame.size.height);
 }
 
 

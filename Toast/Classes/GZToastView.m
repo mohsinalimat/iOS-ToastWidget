@@ -9,8 +9,8 @@
 
 #import "GZToastView.h"
 
-#define GZ_Toast_Max_Relative_Width (([[UIScreen mainScreen] bounds].size.width) * 0.8)
-#define GZ_Toast_Max_Width (GZ_Toast_Max_Relative_Width>400?400:GZ_Toast_Max_Relative_Width)
+#define GZ_Toast_Max_Relative_Width (([[UIScreen mainScreen] bounds].size.width) * 0.6)
+#define GZ_Toast_Max_Width (GZ_Toast_Max_Relative_Width>200?200:GZ_Toast_Max_Relative_Width)
 #define GZ_Toast_Max_Height 300
 
 #define GZ_Toast_Icon_Size 45
@@ -42,15 +42,20 @@
     
     CGRect rect = [measureString boundingRectWithSize:CGSizeMake(GZ_Toast_Max_Width - GZ_Toast_Inter_Padding * 2,
                                                                  GZ_Toast_Max_Height - GZ_Toast_Inter_Padding * 2)
-                                              options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
+                                              options:NSStringDrawingUsesLineFragmentOrigin
                                               context:nil];
     
-    UITextView* textView = [UITextView new];
-    textView.font = [toastView textFont];
-    textView.text = text;
-    textView.frame = CGRectMake(GZ_Toast_Inter_Padding, GZ_Toast_Inter_Padding, rect.size.width, rect.size.height);
-    toastView.frame = CGRectMake(0, 0, textView.frame.size.width + GZ_Toast_Inter_Padding * 2, textView.frame.size.height + GZ_Toast_Inter_Padding * 2);
-    [toastView addSubview:textView];
+    UILabel* toastText = [UILabel new];
+    toastText.font = [toastView textFont];
+    toastText.text = text;
+    toastText.contentMode = UIViewContentModeCenter;
+    toastText.backgroundColor = [UIColor clearColor];
+    toastText.numberOfLines = 0;
+    toastText.textColor = [toastView textColor];
+
+    toastText.frame = CGRectMake(GZ_Toast_Inter_Padding, GZ_Toast_Inter_Padding, rect.size.width, rect.size.height);
+    toastView.frame = CGRectMake(0, 0, toastText.frame.size.width + GZ_Toast_Inter_Padding * 2, toastText.frame.size.height + GZ_Toast_Inter_Padding * 2);
+    [toastView addSubview:toastText];
     
     return toastView;
 }
@@ -79,15 +84,20 @@
         
         CGRect rect = [measureString boundingRectWithSize:CGSizeMake(GZ_Toast_Max_Width - GZ_Toast_Inter_Padding * 2 - GZ_Toast_Component_Margin - GZ_Toast_Icon_Size,
                                                                      GZ_Toast_Max_Height - GZ_Toast_Inter_Padding * 2)
-                                                  options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
+                                                  options:NSStringDrawingUsesLineFragmentOrigin
                                                   context:nil];
         
-        UITextView* textView = [UITextView new];
-        textView.font = [toastView textFont];
-        textView.text = text;
-        textView.frame = CGRectMake(GZ_Toast_Inter_Padding + GZ_Toast_Component_Margin + GZ_Toast_Icon_Size, GZ_Toast_Inter_Padding, rect.size.width, rect.size.height);
-        [toastView addSubview:textView];
+        UILabel* toastText = [UILabel new];
+        toastText.font = [toastView textFont];
+        toastText.text = text;
+        toastText.textColor = [toastView textColor];
+        toastText.backgroundColor = [UIColor clearColor];
+        toastText.numberOfLines = 0;
         toastView.frame = CGRectMake(0, 0, GZ_Toast_Icon_Size + GZ_Toast_Inter_Padding * 2 + GZ_Toast_Component_Margin + rect.size.width, MAX(GZ_Toast_Icon_Size, rect.size.height) + 2 * GZ_Toast_Inter_Padding);
+        
+        toastText.frame = CGRectMake(GZ_Toast_Inter_Padding + GZ_Toast_Component_Margin + GZ_Toast_Icon_Size, (toastView.frame.size.height - rect.size.height)/2 , rect.size.width, rect.size.height);
+        [toastView addSubview:toastText];
+        
     } else {
         toastView.frame = CGRectMake(0, 0, GZ_Toast_Icon_Size + 2* GZ_Toast_Inter_Padding, GZ_Toast_Icon_Size + 2* GZ_Toast_Inter_Padding);
     }
@@ -124,26 +134,31 @@
     }
     
     // Config Text & Title
-    NSAttributedString* titleMeasureString = [[NSAttributedString alloc] initWithString:title
-                                                                             attributes:@{NSFontAttributeName:[toastView titleFont]}];
+    NSAttributedString* titleString = [[NSAttributedString alloc] initWithString:title
+                                                                        attributes:@{NSFontAttributeName:[toastView titleFont]}];
     
-    CGRect titleRect = [titleMeasureString boundingRectWithSize:CGSizeMake(GZ_Toast_Max_Width - GZ_Toast_Inter_Padding * 2 - GZ_Toast_Component_Margin - GZ_Toast_Icon_Size, GZ_Toast_Title_Height)
-                                                        options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
-                                                        context:nil];
+    CGRect titleRect = [titleString boundingRectWithSize:CGSizeMake(GZ_Toast_Max_Width - GZ_Toast_Inter_Padding * 2 - GZ_Toast_Component_Margin - GZ_Toast_Icon_Size,
+                                                                 GZ_Toast_Max_Height - GZ_Toast_Inter_Padding * 2)
+                                              options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
+                                              context:nil];
     
-    UITextView* titleView = [UITextView new];
-    titleView.font = [toastView textFont];
-    titleView.text = title;
-    titleView.frame = CGRectMake(GZ_Toast_Inter_Padding + GZ_Toast_Icon_Size + GZ_Toast_Component_Margin,
+    UILabel* toastTitle = [UILabel new];
+    toastTitle.font = [toastView titleFont];
+    toastTitle.text = title;
+    toastTitle.textColor = [toastView textColor];
+    toastTitle.backgroundColor = [UIColor clearColor];
+    toastTitle.numberOfLines = 0;
+    toastTitle.frame = CGRectMake(GZ_Toast_Inter_Padding + GZ_Toast_Icon_Size + GZ_Toast_Component_Margin,
                                  GZ_Toast_Inter_Padding,
                                  titleRect.size.width,
                                  titleRect.size.height);
-    [toastView addSubview:titleView];
+    [toastView addSubview:toastTitle];
     
     contentSize.width += GZ_Toast_Component_Margin + titleRect.size.width;
     contentSize.height = MAX(contentSize.height, titleRect.size.height + 2 * GZ_Toast_Inter_Padding);
     
     if (hasText) {
+        
         NSAttributedString* measureString = [[NSAttributedString alloc] initWithString:text
                                                                             attributes:@{NSFontAttributeName:[toastView textFont]}];
         
@@ -152,17 +167,20 @@
                                                   options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
                                                   context:nil];
         
-        UITextView* textView = [UITextView new];
-        textView.font = [toastView textFont];
-        textView.text = text;
-        textView.frame = CGRectMake(GZ_Toast_Inter_Padding + GZ_Toast_Component_Margin + GZ_Toast_Icon_Size,
+        UILabel* toastText = [UILabel new];
+        toastText.font = [toastView textFont];
+        toastText.text = text;
+        toastText.textColor = [toastView textColor];
+        toastText.numberOfLines = 0;
+        toastText.backgroundColor = [UIColor clearColor];
+        toastText.frame = CGRectMake(GZ_Toast_Inter_Padding + GZ_Toast_Component_Margin + GZ_Toast_Icon_Size,
                                     GZ_Toast_Inter_Padding + GZ_Toast_Component_Margin + titleRect.size.height,
                                     rect.size.width,
                                     rect.size.height);
-        [toastView addSubview:textView];
+        [toastView addSubview:toastText];
         
         contentSize.width  = MAX(contentSize.width, GZ_Toast_Inter_Padding * 2 + GZ_Toast_Component_Margin + rect.size.width + GZ_Toast_Icon_Size);
-        contentSize.height = MAX(contentSize.height, titleRect.size.height + 2 * GZ_Toast_Inter_Padding);
+        contentSize.height = MAX(contentSize.height, titleRect.size.height + 2 * GZ_Toast_Inter_Padding + rect.size.height + GZ_Toast_Component_Margin);
     }
    
     toastView.frame = CGRectMake(0, 0, contentSize.width, contentSize.height);
@@ -172,6 +190,8 @@
 + (GZToastView*)toastWithCustomizedContent:(UIView*)customizedContent
 {
     GZToastView* toastView = [GZToastView new];
+    [toastView addSubview:customizedContent];
+    customizedContent.frame = CGRectMake(GZ_Toast_Inter_Padding, GZ_Toast_Inter_Padding, customizedContent.frame.size.width, customizedContent.frame.size.height);
     toastView.frame = CGRectMake(0, 0, customizedContent.frame.size.width + 2 * GZ_Toast_Inter_Padding, customizedContent.frame.size.height + 2 * GZ_Toast_Inter_Padding);
     return toastView;
 }
@@ -185,12 +205,24 @@
     self.completion = completionCallback;
     
     NSEnumerator *frontToBackWindows = [UIApplication.sharedApplication.windows reverseObjectEnumerator];
+    
     for (UIWindow *window in frontToBackWindows){
         BOOL windowOnMainScreen = window.screen == UIScreen.mainScreen;
         BOOL windowIsVisible = !window.hidden && window.alpha > 0;
         BOOL windowLevelNormal = window.windowLevel == UIWindowLevelNormal;
         
         if(windowOnMainScreen && windowIsVisible && windowLevelNormal){
+            
+            float windowWidth = window.bounds.size.width;
+            float windowHeight= window.bounds.size.height;
+            float toastOriginX = (windowWidth - self.frame.size.width) / 2;
+            float toastOriginY = (windowHeight - self.frame.size.height) / 2;
+            
+            self.frame = CGRectMake(toastOriginX,
+                                    toastOriginY,
+                                    self.frame.size.width,
+                                    self.frame.size.height);
+            
             [window addSubview:self];
             break;
         }
@@ -214,6 +246,8 @@
                          if (self.completion) {
                              self.completion();
                          }
+                         
+                         [[NSNotificationCenter defaultCenter] removeObserver:self];
                      }];
 }
 
@@ -224,13 +258,18 @@
     self.layer.backgroundColor = [self defaultBackgrounColor].CGColor;
     self.layer.cornerRadius = GZ_Toast_Corner;
     self.clipsToBounds = YES;
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(orientationChanged:)
+                                                 name:UIDeviceOrientationDidChangeNotification
+                                               object:nil];
+    
     return self;
 }
 
 #pragma mark - Default Styles
 - (UIFont*)textFont
 {
-    return [UIFont fontWithName:@"HelveticaNeue-Thin" size:12.0];
+    return [UIFont fontWithName:@"HelveticaNeue" size:10.0];
 }
 
 - (UIFont*)titleFont
@@ -238,9 +277,38 @@
     return [UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0];
 }
 
+- (UIColor*)textColor
+{
+    return [UIColor whiteColor];
+}
+
 - (UIColor*)defaultBackgrounColor
 {
-    return [[UIColor blackColor] colorWithAlphaComponent:0.6];
+    return [[UIColor blackColor] colorWithAlphaComponent:0.9];
 }
+
+#pragma mark - Orientation Change
+- (void)orientationChanged:(NSNotification *)notification{
+    
+    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+    switch (orientation)
+    {
+        case UIInterfaceOrientationPortrait:
+        case UIInterfaceOrientationPortraitUpsideDown:
+        {
+            //load the portrait view
+        }
+            
+            break;
+        case UIInterfaceOrientationLandscapeLeft:
+        case UIInterfaceOrientationLandscapeRight:
+        {
+            //load the landscape view
+        }
+            break;
+        case UIInterfaceOrientationUnknown:break;
+    }
+}
+
 
 @end

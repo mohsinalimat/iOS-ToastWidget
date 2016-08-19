@@ -196,6 +196,20 @@
     return toastView;
 }
 
+- (void)adjustToastPosition
+{
+    UIWindow* window = self.window;
+    float windowWidth = window.bounds.size.width;
+    float windowHeight= window.bounds.size.height;
+    float toastOriginX = (windowWidth - self.frame.size.width) / 2;
+    float toastOriginY = (windowHeight - self.frame.size.height) / 2;
+    
+    self.frame = CGRectMake(toastOriginX,
+                            toastOriginY,
+                            self.frame.size.width,
+                            self.frame.size.height);
+}
+
 #pragma mark - Control
 
 - (void)showForDuration:(float)seconds
@@ -213,17 +227,9 @@
         
         if(windowOnMainScreen && windowIsVisible && windowLevelNormal){
             
-            float windowWidth = window.bounds.size.width;
-            float windowHeight= window.bounds.size.height;
-            float toastOriginX = (windowWidth - self.frame.size.width) / 2;
-            float toastOriginY = (windowHeight - self.frame.size.height) / 2;
-            
-            self.frame = CGRectMake(toastOriginX,
-                                    toastOriginY,
-                                    self.frame.size.width,
-                                    self.frame.size.height);
-            
             [window addSubview:self];
+            [self adjustToastPosition];
+
             break;
         }
     }
@@ -289,17 +295,7 @@
 
 #pragma mark - Orientation Change
 - (void)orientationChanged:(NSNotification *)notification{
-    
-    UIWindow* window = self.window;
-    float windowWidth = window.bounds.size.width;
-    float windowHeight= window.bounds.size.height;
-    float toastOriginX = (windowWidth - self.frame.size.width) / 2;
-    float toastOriginY = (windowHeight - self.frame.size.height) / 2;
-    
-    self.frame = CGRectMake(toastOriginX,
-                            toastOriginY,
-                            self.frame.size.width,
-                            self.frame.size.height);
+    [self adjustToastPosition];
 }
 
 

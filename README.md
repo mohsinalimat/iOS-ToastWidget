@@ -18,18 +18,18 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Screen Shot
 
--Demo launch
-![app screen](https://cloud.githubusercontent.com/assets/8198256/17805893/48f011ce-6634-11e6-86d2-16ae984b1556.png)
--Initial screen
-![first launch](https://cloud.githubusercontent.com/assets/8198256/17805888/48ebd514-6634-11e6-8bdc-0491e4248feb.png)
--Toast Style 1
-![toast1](https://cloud.githubusercontent.com/assets/8198256/17805889/48ec61fa-6634-11e6-8ada-104588dae47b.png)
--Toast Style 2
-![toast2](https://cloud.githubusercontent.com/assets/8198256/17805890/48ec9a94-6634-11e6-96e7-ae3abd9408bf.png)
--Toast Style 3
-![toast3](https://cloud.githubusercontent.com/assets/8198256/17805891/48ef3664-6634-11e6-841c-ac2a78fd6f39.png)
--Customzied Style
-![toast4](https://cloud.githubusercontent.com/assets/8198256/17805892/48ef8a88-6634-11e6-9d21-57e4e3c26a38.png)
+- Demo launch <br/>
+![app screen](https://cloud.githubusercontent.com/assets/8198256/17805893/48f011ce-6634-11e6-86d2-16ae984b1556.png)<br/>
+- Initial screen <br/>
+![first launch](https://cloud.githubusercontent.com/assets/8198256/17805888/48ebd514-6634-11e6-8bdc-0491e4248feb.png)<br/>
+- Toast Style 1 <br/>
+![toast1](https://cloud.githubusercontent.com/assets/8198256/17805889/48ec61fa-6634-11e6-8ada-104588dae47b.png)<br/>
+- Toast Style 2 <br/>
+![toast2](https://cloud.githubusercontent.com/assets/8198256/17805890/48ec9a94-6634-11e6-96e7-ae3abd9408bf.png)<br/>
+- Toast Style 3 <br/>
+![toast3](https://cloud.githubusercontent.com/assets/8198256/17805891/48ef3664-6634-11e6-841c-ac2a78fd6f39.png)<br/>
+- Customzied Style <br/>
+![toast4](https://cloud.githubusercontent.com/assets/8198256/17805892/48ef8a88-6634-11e6-9d21-57e4e3c26a38.png)<br/>
 
 
 ## Installation

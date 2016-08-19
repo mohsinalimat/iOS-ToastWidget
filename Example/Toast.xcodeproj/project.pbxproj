@@ -132,9 +132,9 @@
 		6003F593195388D20070C39A /* Example for Toast */ = {
 			isa = PBXGroup;
 			children = (
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F59C195388D20070C39A /* GZAppDelegate.h */,
 				6003F59D195388D20070C39A /* GZAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* GZViewController.h */,
 				6003F5A6195388D20070C39A /* GZViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,

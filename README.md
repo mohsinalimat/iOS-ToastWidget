@@ -20,9 +20,9 @@ it, simply add the following line to your Podfile:
 pod "Toast"
 ```
 
-## Author
+## 
 
-zy.zhao, zy.zhao@alibaba-inc.com
+samuel.zhao.yue, samuel.zhao.yue@live.com
 
 ## License
 

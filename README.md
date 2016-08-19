@@ -9,7 +9,13 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## Feature list
+
+- Support default toast style: Pure Text Toast/Icon + Toast Text/Icon + Toast title + Toast Text
+- Work well with customized toast content
+- Auto support screen rotation
+- Provide option for bottom style/centeral popup in screen
+
 
 ## Installation
 

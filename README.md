@@ -18,8 +18,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Screen Shot
 
-<div style="border:none;overflow:auto">
-<table style="border:none;width:1920px"> 
+<div style="border:none;overflow:auto;max-width:800px">
+<table style="border:none;width:1920px;table-layout:fixed"> 
 <tr style="border:none;padding:8px;background-color:#dddddd">
     <td style="border:none;padding:8px"><img src="https://cloud.githubusercontent.com/assets/8198256/17829286/e85aad3e-66dc-11e6-8f46-26e465452a99.png" alt="HTML5 Icon" width="320px" height="500px"></td>
 	<td style="border:none;padding:8px"><img src="https://cloud.githubusercontent.com/assets/8198256/17829289/ea0ded30-66dc-11e6-90e5-b5b35b06a278.png" alt="HTML5 Icon" width="320px" height="500px"></td>

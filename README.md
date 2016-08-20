@@ -1,6 +1,6 @@
 # Toast
 
-[![CI Status](http://img.shields.io/travis/zy.zhao/Toast.svg?style=flat)](https://travis-ci.org/zy.zhao/GZToast)
+[![CI Status](http://img.shields.io/travis/zy.zhao/Toast.svg?style=flat)](https://travis-ci.org/SamuelZhaoY/iOS-ToastWidget)
 [![Version](https://img.shields.io/cocoapods/v/Toast.svg?style=flat)](http://cocoapods.org/pods/GZToast)
 [![License](https://img.shields.io/cocoapods/l/Toast.svg?style=flat)](http://cocoapods.org/pods/GZToast)
 [![Platform](https://img.shields.io/cocoapods/p/Toast.svg?style=flat)](http://cocoapods.org/pods/GZToast)

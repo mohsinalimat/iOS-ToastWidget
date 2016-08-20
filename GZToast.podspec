@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GZToast'
-  s.version          = '0.1.0-beta'
+  s.version          = '0.1.1-beta'
   s.summary          = 'Toast widget on iOS platform'
 
   s.description      = <<-DESC

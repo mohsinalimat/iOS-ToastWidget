@@ -18,17 +18,26 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Screen Shot
 
-![app screen](https://cloud.githubusercontent.com/assets/8198256/17805893/48f011ce-6634-11e6-86d2-16ae984b1556.png)
+<div style="border:none">
+<table style="border:none;table-layout:fixed;width:500"> 
+<tr>
+    <td><img src="https://cloud.githubusercontent.com/assets/8198256/17805893/48f011ce-6634-11e6-86d2-16ae984b1556.png" alt="HTML5 Icon" width="160" height="320"></td>
+	<td></td>
+	<td><img src="https://cloud.githubusercontent.com/assets/8198256/17805888/48ebd514-6634-11e6-8bdc-0491e4248feb.png" alt="HTML5 Icon" width="160" height="320"></td>
+	<td></td>
+	<td><img src="https://cloud.githubusercontent.com/assets/8198256/17805889/48ec61fa-6634-11e6-8ada-104588dae47b.png" alt="HTML5 Icon" width="160" height="320"></td>
+</tr>
 
-![first launch](https://cloud.githubusercontent.com/assets/8198256/17805888/48ebd514-6634-11e6-8bdc-0491e4248feb.png)
+<tr>
+    <td><img src="https://cloud.githubusercontent.com/assets/8198256/17805890/48ec9a94-6634-11e6-96e7-ae3abd9408bf.png" alt="HTML5 Icon" width="160" height="320"></td>
+	<td></td>
+	<td><img src="https://cloud.githubusercontent.com/assets/8198256/17805891/48ef3664-6634-11e6-841c-ac2a78fd6f39.png" alt="HTML5 Icon" width="160" height="320"></td>
+	<td></td>
+	<td><img src="https://cloud.githubusercontent.com/assets/8198256/17805892/48ef8a88-6634-11e6-9d21-57e4e3c26a38.png" alt="HTML5 Icon" width="160" height="320"></td>
+</tr>
 
-![toast1](https://cloud.githubusercontent.com/assets/8198256/17805889/48ec61fa-6634-11e6-8ada-104588dae47b.png)
-
-![toast2](https://cloud.githubusercontent.com/assets/8198256/17805890/48ec9a94-6634-11e6-96e7-ae3abd9408bf.png)
-
-![toast3](https://cloud.githubusercontent.com/assets/8198256/17805891/48ef3664-6634-11e6-841c-ac2a78fd6f39.png)
-
-![toast4](https://cloud.githubusercontent.com/assets/8198256/17805892/48ef8a88-6634-11e6-9d21-57e4e3c26a38.png)
+</table>
+</div>
 
 
 ## Installation

@@ -1,0 +1,6 @@
+framework module GZToast {
+  umbrella header "GZToast-umbrella.h"
+
+  export *
+  module * { export * }
+}

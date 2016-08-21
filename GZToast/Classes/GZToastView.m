@@ -19,6 +19,8 @@
 #define GZ_Toast_Component_Margin 8
 #define GZ_Toast_Inter_Padding 8
 
+#define GZ_Toast_Window_Botton_Padding 80
+
 #define GZ_Toast_Corner 4
 
 @interface GZToastView ()
@@ -199,16 +201,34 @@
 
 - (void)adjustToastPosition
 {
-    UIWindow* window = self.window;
-    float windowWidth = window.bounds.size.width;
-    float windowHeight= window.bounds.size.height;
-    float toastOriginX = (windowWidth - self.frame.size.width) / 2;
-    float toastOriginY = (windowHeight - self.frame.size.height) / 2;
     
-    self.frame = CGRectMake(toastOriginX,
-                            toastOriginY,
-                            self.frame.size.width,
-                            self.frame.size.height);
+    if ([GZToastConfig sharedInstance].location == GZ_Toast_In_Middle) {
+        
+        UIWindow* window = self.window;
+        float windowWidth = window.bounds.size.width;
+        float windowHeight= window.bounds.size.height;
+        float toastOriginX = (windowWidth - self.frame.size.width) / 2;
+        float toastOriginY = (windowHeight - self.frame.size.height) / 2;
+        
+        self.frame = CGRectMake(toastOriginX,
+                                toastOriginY,
+                                self.frame.size.width,
+                                self.frame.size.height);
+        
+    } else if ([GZToastConfig sharedInstance].location == GZ_Toast_Bottom) {
+        
+        UIWindow* window = self.window;
+        float windowWidth = window.bounds.size.width;
+        float windowHeight= window.bounds.size.height;
+        float toastOriginX = (windowWidth - self.frame.size.width) / 2;
+        float toastOriginY = (windowHeight - self.frame.size.height) - GZ_Toast_Window_Botton_Padding;
+        
+        self.frame = CGRectMake(toastOriginX,
+                                toastOriginY,
+                                self.frame.size.width,
+                                self.frame.size.height);
+        
+    }
 }
 
 #pragma mark - Control
@@ -228,8 +248,8 @@
         
         if(windowOnMainScreen && windowIsVisible && windowLevelNormal){
             
-            [window addSubview:self];
-            [self adjustToastPosition];
+            [self displayInWindow:window];
+//            [self adjustToastPosition];
 
             break;
         }
@@ -238,24 +258,125 @@
     [self performSelector:@selector(dismiss) withObject:nil afterDelay:seconds];
 }
 
+
+- (void)displayInWindow:(UIWindow*)window
+{
+    [window addSubview:self];
+    self.alpha = 0.0;
+    [self adjustToastPosition];
+    
+    if ([GZToastConfig sharedInstance].animation == GZ_TOAST_ANIMATION_FADING) {
+        
+        [UIView animateWithDuration:0.3
+                              delay:0.3
+                            options:UIViewAnimationOptionAllowAnimatedContent
+                         animations:^{
+                             self.alpha = 1.0;
+                         } completion:nil];
+        
+    } else if ([GZToastConfig sharedInstance].animation == GZ_TOAST_ANIMATION_SLIDING_FROM_LEFT) {
+       
+        float finalCenterX = self.window.bounds.size.width/2;
+        float initialCenterX = -self.frame.size.width/2;
+        self.center = CGPointMake(initialCenterX, self.center.y);
+        self.alpha = 1.0;
+        
+        [UIView animateWithDuration:0.3
+                              delay:0.3
+                            options:UIViewAnimationOptionAllowAnimatedContent
+                         animations:^{
+                             self.center = CGPointMake(finalCenterX, self.center.y);
+                         } completion:nil];
+        
+        
+    } else if ([GZToastConfig sharedInstance].animation == GZ_TOAST_ANIMATION_POPING_FROM_BOTTOM) {
+        
+        float finalCenterY = self.center.y;
+        float initialCenterY = (self.window.frame.size.height + self.frame.size.height);
+        self.center = CGPointMake(self.center.x, initialCenterY);
+        self.alpha = 1.0;
+        
+        [UIView animateWithDuration:0.3
+                              delay:0.3
+                            options:UIViewAnimationOptionAllowAnimatedContent
+                         animations:^{
+                             self.center = CGPointMake(self.center.x, finalCenterY);
+                         }
+                         completion:nil];
+        
+    }
+}
+
 - (void)dismiss
 {
-    [UIView animateWithDuration:0.3
-                          delay:0.3
-                        options:UIViewAnimationOptionAllowAnimatedContent
-                     animations:^{
-                         self.alpha = 0.0;
-                     } completion:^(BOOL finished) {
-                         if (self.superview) {
-                             [self removeFromSuperview];
+    
+    if ([GZToastConfig sharedInstance].animation == GZ_TOAST_ANIMATION_FADING) {
+        
+        [UIView animateWithDuration:0.3
+                              delay:0.3
+                            options:UIViewAnimationOptionAllowAnimatedContent
+                         animations:^{
+                             self.alpha = 0.0;
+                         } completion:^(BOOL finished) {
+                             if (self.superview) {
+                                 [self removeFromSuperview];
+                             }
+                             
+                             if (self.completion) {
+                                 self.completion();
+                             }
+                             
+                             [[NSNotificationCenter defaultCenter] removeObserver:self];
+                         }];
+
+        
+    } else if ([GZToastConfig sharedInstance].animation == GZ_TOAST_ANIMATION_SLIDING_FROM_LEFT) {
+        
+        
+        float initialCenterX = self.window.bounds.size.width/2;
+        float finalCenterX = -self.frame.size.width/2;
+        
+        [UIView animateWithDuration:0.3
+                              delay:0.3
+                            options:UIViewAnimationOptionAllowAnimatedContent
+                         animations:^{
+                             self.center = CGPointMake(finalCenterX, self.center.y);
+                         } completion:^(BOOL finished) {
+                             if (self.superview) {
+                                 [self removeFromSuperview];
+                             }
+                             
+                             if (self.completion) {
+                                 self.completion();
+                             }
+                             
+                             [[NSNotificationCenter defaultCenter] removeObserver:self];
+                         }];
+        
+    } else if ([GZToastConfig sharedInstance].animation == GZ_TOAST_ANIMATION_POPING_FROM_BOTTOM) {
+        
+        float initialCenterY = self.center.y;
+        float finalCenterY = (self.window.frame.size.height + self.frame.size.height);
+        
+        [UIView animateWithDuration:0.3
+                              delay:0.3
+                            options:UIViewAnimationOptionAllowAnimatedContent
+                         animations:^{
+                             self.center = CGPointMake(self.center.x, finalCenterY);
                          }
-                         
-                         if (self.completion) {
-                             self.completion();
-                         }
-                         
-                         [[NSNotificationCenter defaultCenter] removeObserver:self];
-                     }];
+                         completion:^(BOOL finished) {
+                             if (self.superview) {
+                                 [self removeFromSuperview];
+                             }
+                             
+                             if (self.completion) {
+                                 self.completion();
+                             }
+                             
+                             [[NSNotificationCenter defaultCenter] removeObserver:self];
+                         }];
+        
+    }
 }
 
 #pragma mark - Interal Method
@@ -315,9 +436,5 @@
     [self adjustToastPosition];
 }
 
-#pragma mark - Location
-
-
-#pragma mark - Animation Control
 
 @end

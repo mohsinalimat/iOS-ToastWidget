@@ -5,18 +5,21 @@
 [![License](https://img.shields.io/cocoapods/l/Toast.svg?style=flat)](http://cocoapods.org/pods/GZToast)
 [![Platform](https://img.shields.io/cocoapods/p/Toast.svg?style=flat)](http://cocoapods.org/pods/GZToast)
 
-GZToast is a toast widget which enabe user to build up toast view in iOS apps with three common default styles. At the same time, developer can also easily insert an customized toasting content of one's own. Users can also define popup time and completion callback of one's own <br/>
+GZToast is a toast widget which enabe user to build up toast view in iOS apps with three common default styles. At the same time, developer can also easily insert an customized toasting content of one's own. Users can also define popup time and completion callback of one's own.<br/>
 
 This project now support screen rotation. <br/>
 
 What's next: <br/>
-- Optimization on current example project sturcture, remove unused config file.<br/>
-- Will be providing later stage animation optimization in later stage.<br/>
 - Test cases to be provided.<br/>
 
 ## Example
 
-- To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+## Demo
+
+![demo2](https://cloud.githubusercontent.com/assets/8198256/17836562/9976f662-67c9-11e6-98dc-a20d4fafb456.gif)
+
 
 ### Default style1: pure toast in text
 
@@ -67,6 +70,7 @@ UIActivityIndicatorView* indicator = [[UIActivityIndicatorView alloc] initWithAc
 - Work well with customized toast content
 - Auto support screen rotation
 - Provide option for bottom style/centeral popup in screen
+- Provide different types of animation
 
 ## Screen Shot
 

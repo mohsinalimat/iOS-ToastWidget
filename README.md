@@ -1,17 +1,22 @@
-# Toast
+# GZToast
 
 [![CI Status](https://travis-ci.org/SamuelZhaoY/iOS-ToastWidget.svg?branch=master)](https://travis-ci.org/SamuelZhaoY/iOS-ToastWidget.svg?branch=master)
 [![Version](https://img.shields.io/cocoapods/v/Toast.svg?style=flat)](http://cocoapods.org/pods/GZToast)
 [![License](https://img.shields.io/cocoapods/l/Toast.svg?style=flat)](http://cocoapods.org/pods/GZToast)
 [![Platform](https://img.shields.io/cocoapods/p/Toast.svg?style=flat)](http://cocoapods.org/pods/GZToast)
 
-GZToast is a toast widget which enabe user to build up toast view in iOS apps with three common default styles. At the same time, developer can also easily insert an customized toasting content of one's own. Users can also define popup time and completion callback f one's own <br/>
+GZToast is a toast widget which enabe user to build up toast view in iOS apps with three common default styles. At the same time, developer can also easily insert an customized toasting content of one's own. Users can also define popup time and completion callback of one's own <br/>
 
-This project now support screen rotation. Will be providing later stage animation optimization in later stage.
+This project now support screen rotation. <br/>
+
+What's next: <br/>
+- Optimization on current example project sturcture, remove unused config file.<br/>
+- Will be providing later stage animation optimization in later stage.<br/>
+- Test cases to be provided.<br/>
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+- To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ### Default style1: pure toast in text
 
@@ -85,12 +90,23 @@ UIActivityIndicatorView* indicator = [[UIActivityIndicatorView alloc] initWithAc
 
 ## Installation
 
+### CocoaPods
+
 Toast is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "Toast"
+pod "GZToast"
 ```
+
+### Source
+
+Since this is a small project, you can also copy the source code: <br/>
+<br/>
+GZToastView.h <br/>
+GZToastView.m <br/>
+
+to you project.
 
 ## 
 

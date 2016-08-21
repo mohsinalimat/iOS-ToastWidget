@@ -1,5 +1,5 @@
 PODS:
-  - GZToast (0.1.0)
+  - GZToast (0.1.2)
 
 DEPENDENCIES:
   - GZToast (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GZToast: 4d0fb0da8c54ab892da7b96c5d5506ff3b22fa99
+  GZToast: f28a02c7502b8cf01923ee591d7d96e01e33929f
 
 PODFILE CHECKSUM: 5e3ebaadee779a85e440c16c22ebb78a158b11b8
 

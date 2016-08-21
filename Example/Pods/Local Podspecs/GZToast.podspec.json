@@ -1,6 +1,6 @@
 {
   "name": "GZToast",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "Toast widget on iOS platform",
   "description": "1. iOS version of android related toast view. Which supports icon, text, loading view display.\n2. Current widget supports screen rotation\n3. Auto adjust display height when keyboard pops\n4. Highly customizable via view properties",
   "homepage": "https://github.com/SamuelZhaoY/",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/SamuelZhaoY/iOS-ToastWidget.git",
-    "tag": "0.1.0"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "8.0"

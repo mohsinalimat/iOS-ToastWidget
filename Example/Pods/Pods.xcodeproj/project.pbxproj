@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		04D5AFD339E81EC0E75125AB4177A395 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		19BB5A0A5AC0621A12AC671E00547C4E /* Pods-GZToast_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD14FFAC142F001DB76ABDF1E597600A /* Pods-GZToast_Tests-dummy.m */; };
-		3F9CF20E52D49A1A55C0B99D74252BC8 /* GZToastUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D75813BC8B77A6A8F21C64C2789822 /* GZToastUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F9CF20E52D49A1A55C0B99D74252BC8 /* GZToastConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D75813BC8B77A6A8F21C64C2789822 /* GZToastConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44B2367C55655391C04EEA6D3D49306C /* GZToast-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB4F08389288401755A6651945D4D047 /* GZToast-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D73A383000C4779B06F8DA77CDE6165 /* Pods-GZToast_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C92196E7A5896FE57BA62228D822F02 /* Pods-GZToast_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C5F6B085D50205B47B62C676197E449 /* GZToast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C39A7F75EB182E1FE8B44EB39C53EA3 /* GZToast-dummy.m */; };
-		6D59BBB98CD62C71C47BC4E089E315B4 /* GZToastUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FBCEFD7FF526B1E445F85BF3191315 /* GZToastUtils.m */; };
+		6D59BBB98CD62C71C47BC4E089E315B4 /* GZToastConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FBCEFD7FF526B1E445F85BF3191315 /* GZToastConfig.m */; };
 		7C70F337428F72D15784A00F0640D013 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		898CA2D824A27A4D2565E634AD82B2D8 /* GZToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C116610C0BF1F7B232C92A6557DF5 /* GZToastView.m */; };
 		B9DF2C883A86FB07CDB4A7D8DBFFBBB7 /* GZToastView.h in Headers */ = {isa = PBXBuildFile; fileRef = F20162CD281BF9499B7CCCF148948620 /* GZToastView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,7 +35,7 @@
 /* Begin PBXFileReference section */
 		00FCB8799A1729884D7DD880433456CA /* GZToast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GZToast-prefix.pch"; sourceTree = "<group>"; };
 		0188E63D766F84A7BF5DA86CC0C11018 /* Pods-GZToast_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GZToast_Example-umbrella.h"; sourceTree = "<group>"; };
-		05D75813BC8B77A6A8F21C64C2789822 /* GZToastUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GZToastUtils.h; sourceTree = "<group>"; };
+		05D75813BC8B77A6A8F21C64C2789822 /* GZToastConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GZToastConfig.h; sourceTree = "<group>"; };
 		0C39A7F75EB182E1FE8B44EB39C53EA3 /* GZToast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GZToast-dummy.m"; sourceTree = "<group>"; };
 		17E2430763EF63F54EDD1E8B99917162 /* Pods-GZToast_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GZToast_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2D00945791F2BF2C92E48D311B9ABE14 /* Pods-GZToast_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GZToast_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		EA5D7B48B859C68B49B54A7D99A358C7 /* Pods_GZToast_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GZToast_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED74191348C8A49343C81D5046480914 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1FBCEFD7FF526B1E445F85BF3191315 /* GZToastUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GZToastUtils.m; sourceTree = "<group>"; };
+		F1FBCEFD7FF526B1E445F85BF3191315 /* GZToastConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GZToastConfig.m; sourceTree = "<group>"; };
 		F20162CD281BF9499B7CCCF148948620 /* GZToastView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GZToastView.h; sourceTree = "<group>"; };
 		F7CD46C28E3CE32AE8B978E06F3E7CEC /* Pods-GZToast_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GZToast_Tests-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,8 +147,8 @@
 		3214BA7EFA860B2AFD2F090928FEA556 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				05D75813BC8B77A6A8F21C64C2789822 /* GZToastUtils.h */,
-				F1FBCEFD7FF526B1E445F85BF3191315 /* GZToastUtils.m */,
+				05D75813BC8B77A6A8F21C64C2789822 /* GZToastConfig.h */,
+				F1FBCEFD7FF526B1E445F85BF3191315 /* GZToastConfig.m */,
 				F20162CD281BF9499B7CCCF148948620 /* GZToastView.h */,
 				3B4C116610C0BF1F7B232C92A6557DF5 /* GZToastView.m */,
 			);
@@ -239,7 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44B2367C55655391C04EEA6D3D49306C /* GZToast-umbrella.h in Headers */,
-				3F9CF20E52D49A1A55C0B99D74252BC8 /* GZToastUtils.h in Headers */,
+				3F9CF20E52D49A1A55C0B99D74252BC8 /* GZToastConfig.h in Headers */,
 				B9DF2C883A86FB07CDB4A7D8DBFFBBB7 /* GZToastView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,7 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C5F6B085D50205B47B62C676197E449 /* GZToast-dummy.m in Sources */,
-				6D59BBB98CD62C71C47BC4E089E315B4 /* GZToastUtils.m in Sources */,
+				6D59BBB98CD62C71C47BC4E089E315B4 /* GZToastConfig.m in Sources */,
 				898CA2D824A27A4D2565E634AD82B2D8 /* GZToastView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

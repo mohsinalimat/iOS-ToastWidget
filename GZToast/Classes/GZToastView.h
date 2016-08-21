@@ -8,10 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSUInteger, GZToastViewLocation) {
-    GZ_Toast_Bottom,
-    GZ_Toast_In_Middle,
-};
+
 
 /**
  *  Highly customizable toast view for iOS

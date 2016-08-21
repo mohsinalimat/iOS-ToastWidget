@@ -8,6 +8,7 @@
 //
 
 #import "GZToastView.h"
+#import "GZToastConfig.h"
 
 #define GZ_Toast_Max_Relative_Width (([[UIScreen mainScreen] bounds].size.width) * 0.6)
 #define GZ_Toast_Max_Width (GZ_Toast_Max_Relative_Width>200?200:GZ_Toast_Max_Relative_Width)
@@ -275,21 +276,37 @@
 #pragma mark - Default Styles
 - (UIFont*)textFont
 {
+    if ([GZToastConfig sharedInstance].textFont) {
+        return [GZToastConfig sharedInstance].textFont;
+    }
+    
     return [UIFont fontWithName:@"HelveticaNeue" size:10.0];
 }
 
 - (UIFont*)titleFont
 {
+    if ([GZToastConfig sharedInstance].textFont) {
+        return [GZToastConfig sharedInstance].textFont;
+    }
+    
     return [UIFont fontWithName:@"HelveticaNeue-Bold" size:14.0];
 }
 
 - (UIColor*)textColor
 {
+    if ([GZToastConfig sharedInstance].textColor) {
+        return [GZToastConfig sharedInstance].textColor;
+    }
+    
     return [UIColor whiteColor];
 }
 
 - (UIColor*)defaultBackgrounColor
 {
+    if ([GZToastConfig sharedInstance].backgroundColor) {
+        return [GZToastConfig sharedInstance].backgroundColor;
+    }
+    
     return [[UIColor blackColor] colorWithAlphaComponent:0.9];
 }
 
@@ -298,5 +315,9 @@
     [self adjustToastPosition];
 }
 
+#pragma mark - Location
+
+
+#pragma mark - Animation Control
 
 @end

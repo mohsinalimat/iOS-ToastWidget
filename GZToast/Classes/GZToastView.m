@@ -331,9 +331,7 @@
 
         
     } else if ([GZToastConfig sharedInstance].animation == GZ_TOAST_ANIMATION_SLIDING_FROM_LEFT) {
-        
-        
-        float initialCenterX = self.window.bounds.size.width/2;
+                
         float finalCenterX = -self.frame.size.width/2;
         
         [UIView animateWithDuration:0.3
@@ -355,7 +353,6 @@
         
     } else if ([GZToastConfig sharedInstance].animation == GZ_TOAST_ANIMATION_POPING_FROM_BOTTOM) {
         
-        float initialCenterY = self.center.y;
         float finalCenterY = (self.window.frame.size.height + self.frame.size.height);
         
         [UIView animateWithDuration:0.3

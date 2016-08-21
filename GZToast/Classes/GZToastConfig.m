@@ -12,7 +12,7 @@
 + (instancetype)sharedInstance
 {
     static GZToastConfig* toastUtils;
-    static dispatch_once_t* dispatch_token;
+    static dispatch_once_t dispatch_token;
     dispatch_once(&dispatch_token, ^{
         toastUtils = [GZToastConfig new];
     });

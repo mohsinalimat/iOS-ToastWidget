@@ -18,8 +18,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Demo
 
-![demo2](https://cloud.githubusercontent.com/assets/8198256/17836562/9976f662-67c9-11e6-98dc-a20d4fafb456.gif)
-
+![ezgif com-resize](https://cloud.githubusercontent.com/assets/8198256/17836603/ac28cbfe-67ca-11e6-9859-8dbd00eaa241.gif)
 
 ### Default style1: pure toast in text
 

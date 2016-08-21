@@ -5,9 +5,56 @@
 [![License](https://img.shields.io/cocoapods/l/Toast.svg?style=flat)](http://cocoapods.org/pods/GZToast)
 [![Platform](https://img.shields.io/cocoapods/p/Toast.svg?style=flat)](http://cocoapods.org/pods/GZToast)
 
+GZToast is a toast widget which enabe user to build up toast view in iOS apps with three common default styles. At the same time, developer can also easily insert an customized toasting content of one's own. Users can also define popup time and completion callback f one's own <br/>
+
+This project now support screen rotation. Will be providing later stage animation optimization in later stage.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+### Default style1: pure toast in text
+
+```objc
+[[GZToastView toastWithText:@"toast style 1"] showForDuration:4
+                                                     onCompletion:^{
+                                                      NSLog(@"Toast complete");
+                                                     }];
+```
+
+### Default style2:
+
+```objc
+[[GZToastView toastWithText:@"toast style 2: icon with corresponding toast description. Adding the long desc to see the overall layout."
+                          icon:[UIImage imageNamed:@"Icon.png"]]
+     showForDuration:4
+        onCompletion:^{
+            NSLog(@"Toast complete");
+     }];
+```
+
+### Default style3:
+```objc
+[[GZToastView toastWithText:@"toast style 3: icon with corresponding toast description. Adding the long desc to see the overall layout."
+                          icon:[UIImage imageNamed:@"Icon.png"]
+                         title:@"Title"]
+     showForDuration:4
+     onCompletion:^{
+         NSLog(@"Toast complete");
+     }];
+```
+
+### Customized style:
+```objc
+UIActivityIndicatorView* indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    indicator.frame = CGRectMake(0, 0, 55, 55);
+    [indicator startAnimating];
+    [[GZToastView toastWithCustomizedContent:indicator] showForDuration:4
+                                                           onCompletion:^{
+                                                               NSLog(@"Toast complete");
+                                                               [indicator stopAnimating];
+                                                           }];
+```
 
 ## Feature list
 
